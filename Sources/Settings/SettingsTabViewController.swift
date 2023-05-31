@@ -163,7 +163,7 @@ final class SettingsTabViewController: NSViewController, SettingsStyleController
 				.slideBackward,
 				.slideLeft,
 				.slideRight
-			])
+			]) && !options.isEmpty
 
 		if isAnimated {
 			NSAnimationContext.runAnimationGroup({ context in
